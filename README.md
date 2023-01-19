@@ -48,7 +48,11 @@ Create an app called blog in the django project folder using command.
 ```
 python manage.py startapp blog
 ```
+## Design
 
+Then updated the views file with a home view and imported http response from django.http
+
+In the blog directory a urls.py needs to be created to connect the views. When you visit the website django maps the users url to urls.py in django_project folder. In the urlpatterns string you can add path('blog/', include('blog.urls')) where 'blog/' maps to webaddress/blog and include blog.urls.
 
 
 
