@@ -43,3 +43,14 @@ python manage.py runserver
 
 Visit http://127.0.0.1:8000/admin to check out the admin screen.
 
+Create an app called blog in the django project folder using command.
+
+```
+python manage.py startapp blog
+```
+
+
+
+
+
+
