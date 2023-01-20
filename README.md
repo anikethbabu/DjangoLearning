@@ -54,6 +54,9 @@ Then updated the views file with a home view and imported http response from dja
 
 In the blog directory a urls.py needs to be created to connect the views. When you visit the website django maps the users url to urls.py in django_project folder. In the urlpatterns string you can add path('blog/', include('blog.urls')) where 'blog/' maps to webaddress/blog and include blog.urls.
 
+Connected .html files and made them run on blog urls on the django website. This was done using the django render command which will render an html template and return it when the right url is visited. You can pass data to a template using render and in the html you can use the variable data through jinja2 templating.
+
+Added boostrap and used template inheritance. Also created a static folder and used {% load static %} to use it in base.html file. 
 
 
 
