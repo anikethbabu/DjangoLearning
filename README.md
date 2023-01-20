@@ -72,3 +72,9 @@ After this you can create a user an admin user with the command.
 python manage.py createsuperuser
 ```
 After all that is created you can log onto admin after running the django site and going to the /admin view. There you can add users and privileges and update and change things.
+
+## Database
+For creating a database table update the models directory with a table and its fields. Then run the command
+```
+python manage.py makemigrations
+```
