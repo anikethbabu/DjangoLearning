@@ -59,5 +59,16 @@ Connected .html files and made them run on blog urls on the django website. This
 Added boostrap and used template inheritance. Also created a static folder and used {% load static %} to use it in base.html file. 
 
 
-
-
+## Django Admin
+To make django admin work first have to create the initial database. Run commands.
+```
+python manage.py makemigrations
+```
+```
+python manage.py migrate
+```
+After this you can create a user an admin user with the command. 
+```
+python manage.py createsuperuser
+```
+After all that is created you can log onto admin after running the django site and going to the /admin view. There you can add users and privileges and update and change things.
