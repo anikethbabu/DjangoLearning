@@ -40,7 +40,10 @@ Launch the server using following command.  Visit the URL specified using a brow
 ```
 python manage.py runserver
 ```
-
+If you want to force kill the server run
+'''
+fuser -k 8000/tcp
+'''
 Visit http://127.0.0.1:8000/admin to check out the admin screen.
 
 Create an app called blog in the django project folder using command.
@@ -134,4 +137,18 @@ post_1 = Post(title='Blog 1', content='First Post Content!', author = user)
 post_1.save()
 ```
 
-In django if you register the model to admin you can acess all the information in the admin gui and make edits and changes.
+In django if you register the model to admin you can access all the information in the admin gui and make edits and changes.
+
+## Django Register
+In views you can import UserCreationForms for an easy register form from django. You just pass the form variable when rendering the template. Check if the form has post data and if its valid and flash a user creation sucess method. To create a form with extra fields you have to create a forms.py file that inherits from UserCreationForm and add the fields that you want. You can add a an inner class meta in your forms to show specify the model and fields. For good styling on forms and good feedback install crispy forms using
+```
+pip install django-crispy-forms
+```
+These after that add it to the settings.py file in the django project specify the template pack. After that you can go into your forms and use 
+'''
+{% load crispy_forms_tags %}
+'''
+'''
+{{ form|crispy }}
+'''
+For more information visit: https://django-crispy-forms.readthedocs.io/en/latest/
