@@ -152,3 +152,35 @@ These after that add it to the settings.py file in the django project specify th
 {{ form|crispy }}
 ```
 For more information visit: https://django-crispy-forms.readthedocs.io/en/latest/
+
+## Django Log In
+The django log in can be handleded using the using
+```
+from django.contrib.auth import views as auth_views
+```
+By importing that into the urls.py file you can use 
+```
+ path('login/', auth_views.LoginView.as_view(template_name = 'users/login.html'), name='login')
+```
+This will take care of all the heavy lifting and allows you to login without have to write the extra code. You just need to create the login.html template and follow the django forms rules.
+
+## Django Log Out
+Same like Log In django does the heavy lifting with authviews just create a logout view and use auth_views.LogoutView.
+
+Also add 
+```
+LOGIN_REDIRECT_URL = 'blog-home'
+LOGIN_URL = 'login'
+```
+in the settings.py so redirect and the login url accesbile to django.
+
+## Profile
+To create a profile updated the users models.py file. To add a profile picture used Pillow
+```
+pip install Pillow
+```
+Made sure login is required to access the profile.
+
+
+
+
