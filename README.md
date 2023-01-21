@@ -181,6 +181,13 @@ pip install Pillow
 ```
 Made sure login is required to access the profile.
 
+To update where you want profile pictures go to settings and add
+```
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+```
+For managning static files read https://docs.djangoproject.com/en/2.1/howto/static-files/#serving-files-uploaded-by-a-user-during-development
 
+To automatically connect a profile when a user is created you have to use signals. To use signals create a signals file in the users directory. Connect a recevier decorator to create profile whenver a user instance is created.
 
 
