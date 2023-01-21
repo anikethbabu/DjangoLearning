@@ -78,3 +78,60 @@ For creating a database table update the models directory with a table and its f
 ```
 python manage.py makemigrations
 ```
+After the code has ran you will see a migrations directory pop up with code for the database.
+
+To view the sql that will be ran from this you can run 
+```
+python manage.py sqlmigrate blog 0001
+```
+To finish migrations and update the database run.
+```
+python manage.py migrate
+```
+
+To open up python Interactive Console to run queries and edits with the tables. You can run command. 
+```
+python manage.py shell
+```
+In the interactive terminal you can work with the django objects.
+
+First you have to run
+```
+from blog.models import Post
+```
+```
+from django.contrib.auth.models import User
+```
+After running that you can work with User db objects. Using
+```
+User.objects.all()
+```
+You can filter based on a field using the command below.
+```
+User.objects.filter(username='anikethbabu')
+```
+You also use first to get the first item in the query.
+
+```
+User.objects.first()
+```
+You can also store it in a variable.
+```
+user = User.objects.filter(username='anikethbabu').first()
+```
+After creating the user variable you can look at the attributes of the the user.
+```
+user.id
+user.pk
+```
+You can also get user based on attributes
+```
+user = User.objects.get(id=1)
+```
+To store in post table you can run
+```
+post_1 = Post(title='Blog 1', content='First Post Content!', author = user)
+post_1.save()
+```
+
+In django if you register the model to admin you can acess all the information in the admin gui and make edits and changes.
