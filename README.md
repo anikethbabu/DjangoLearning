@@ -145,10 +145,10 @@ In views you can import UserCreationForms for an easy register form from django.
 pip install django-crispy-forms
 ```
 These after that add it to the settings.py file in the django project specify the template pack. After that you can go into your forms and use 
-'''
+```
 {% load crispy_forms_tags %}
-'''
-'''
+```
+```
 {{ form|crispy }}
-'''
+```
 For more information visit: https://django-crispy-forms.readthedocs.io/en/latest/
