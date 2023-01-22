@@ -190,4 +190,6 @@ For managning static files read https://docs.djangoproject.com/en/2.1/howto/stat
 
 To automatically connect a profile when a user is created you have to use signals. To use signals create a signals file in the users directory. Connect a recevier decorator to create profile whenver a user instance is created.
 
+## Updating Profile
+Create a UserUpdate from which inherits from forms.Modelform then add the email field. And in meta class make sure the model is User. For profileupdateform do the same thing in the meta the model is Profile and add a image field. In the views import both forms and put them in the profile method them in a context dictionary and pass it to the profile template. In profile make sure the form has an enctype="multipart/form-data" other wise the picture data doesn't save properly. If you want to resize an image in the models.py you can overide the save method and use pillow to resize the image to a good size.
 
