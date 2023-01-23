@@ -196,3 +196,6 @@ Create a UserUpdate from which inherits from forms.Modelform then add the email 
 ## Class Views
 There are different types of django views that take care of common views. For more info visit https://docs.djangoproject.com/en/4.1/topics/class-based-views/.
 In views create a class based view based view fill out the model. Then in the urls import your class based view and put it into the path as <view>.as_view(). For class based views it automatically looks for the template with the naming convention <app>/<model>_<viewtype>.html. You can also change the template it is looking for in views.py using template_name attribute. You can also change other attributes simply by listing the name and updating them. You can create dynamic views by adding a variable in the route an example is 'post/<int:pk>'. To get an absolute URL you can use reverse for more info visit https://docs.djangoproject.com/en/4.1/ref/urlresolvers/. Using UserPassesTestMixin you can authenticate things based on who is longed in. 
+
+## Pagination
+For more info on Pagination visit https://docs.djangoproject.com/en/4.1/topics/pagination/.
