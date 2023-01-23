@@ -193,3 +193,6 @@ To automatically connect a profile when a user is created you have to use signal
 ## Updating Profile
 Create a UserUpdate from which inherits from forms.Modelform then add the email field. And in meta class make sure the model is User. For profileupdateform do the same thing in the meta the model is Profile and add a image field. In the views import both forms and put them in the profile method them in a context dictionary and pass it to the profile template. In profile make sure the form has an enctype="multipart/form-data" other wise the picture data doesn't save properly. If you want to resize an image in the models.py you can overide the save method and use pillow to resize the image to a good size.
 
+## Class Views
+There are different types of django views that take care of common views. For more info visit https://docs.djangoproject.com/en/4.1/topics/class-based-views/.
+In views create a class based view based view fill out the model. Then in the urls import your class based view and put it into the path as <view>.as_view(). For class based views it automatically looks for the template with the naming convention <app>/<model>_<viewtype>.html. You can also change the template it is looking for in views.py using template_name = '<location>/<name>.html'. You can also change other attributes simply by listing the name and updating them.
