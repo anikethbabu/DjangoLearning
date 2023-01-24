@@ -199,3 +199,17 @@ In views create a class based view based view fill out the model. Then in the ur
 
 ## Pagination
 For more info on Pagination visit https://docs.djangoproject.com/en/4.1/topics/pagination/.
+
+##Setting up email and password reset.
+Created password_reset_complete, password_reset_confirm, password_reset, and password_reset_done templates. In urls leveraged authviews so django handled all the views so no coding had to be done for that.
+
+## Setting Environment variable for python.
+Run command 
+```
+nano .bashrc
+```
+Then when you have the editor scroll all the way down and edit the environemnt variables you want. Then save.
+After run command
+```
+source ~/.bashrc
+```
