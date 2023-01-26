@@ -1,0 +1,105 @@
+    1  clear
+    2  pwd
+    3  mkdir -p
+    4  mkdir -p ~/.ssh
+    5  ls -la
+    6  clear
+    7  ls .ssh
+    8  exit
+    9  sudo nano DjangoLearning/django_project/django_project/settings.py 
+   10  sudo chmod 775 DjangoLearning/django_project/
+   11  sudo service apache2 restart
+   12  sudo nano DjangoLearning/django_project/django_project/settings.py 
+   13  sudo service apache2 restart
+   14  sudo nano DjangoLearning/django_project/django_project/settings.py 
+   15  sudo service apache2 restart
+   16  sudo nano DjangoLearning/django_project/django_project/settings.py 
+   17  sudo chmod 775 DjangoLearning/
+   18  cd /etc/apache2/
+   19  ls -lt
+   20  cd ..
+   21  cd usr/local/
+   22  cd ..
+   23  cd var/log/apache2/
+   24  sudo cat var/log/apache2/error.log
+   25  cd ..
+   26  cd ~
+   27  nano DjangoLearning/django_project/django_project/settings.py 
+   28  sudo service apache2 restart
+   29  sudo cat var/log/apache2/error.log
+   30  sudo cat /var/log/apache2/error.log
+   31  nano DjangoLearning/django_project/django_project/
+   32  nano DjangoLearning/django_project/django_project/wsgi.py 
+   33  nano DjangoLearning/django_project/django_project/settings.py 
+   34  nano /etc/apache2/sites-enabled/django_project.conf 
+   35  sudo nano /etc/apache2/sites-enabled/django_project.conf 
+   36  sudo service apache2 restart
+   37  sudo cat /var/log/apache2/error.log
+   38  cd /etc/apache2
+   39  apache2ctl configtest
+   40  cd ..
+   41  cd ~
+   42  cd DjangoLearning/django_project/
+   43  cd ..
+   44  source venv/bin/activate
+   45  cd django_project/
+   46  manage.py check --deploy
+   47  python manage.py check --deploy
+   48  cd ..
+   49  cd DjangoLearning/
+   50  cd django_project/
+   51  python manage.py collectstatic
+   52  cd .. 
+   53  cd ..
+   54  sudo chown :www-data DjangoLearning/django_project/db.sqlite3 
+   55  sudo chmod 664
+   56  sudo chmod 664 DjangoLearning/django_project/db.sqlite3 
+   57  sudo chown :www-data DjangoLearning/django_project/
+   58  ls -la
+   59  DjangoLearning/
+   60  ls -la
+   61  sudo chown -R :www-data DjangoLearning/django_project/media/
+   62  sudo chmod -R 775 DjangoLearning/django_project/media
+   63  nano DjangoLearning/django_project/django_project/settings.py 
+   64  sudo service apache2 restart 
+   65  nano DjangoLearning/django_project/django_project/settings.py 
+   66  sudo service apache2 restart 
+   67  sudo cat /var/log/apache2/error.log
+   68  nano DjangoLearning/django_project/users/signals.py 
+   69  sudo service apache2 restart 
+   70  nano DjangoLearning/django_project/blog/templates/blog/base.html 
+   71  exit
+   72  clear
+   73  cd DjangoLearning/
+   74  git add .
+   75  git commit
+   76  git config --global user.email "anikethbabu@gmail.com"
+   77  git config "Aniketh Babu"
+   78  git config --global user.name "anikethbabu"
+   79  git commit
+   80  git push
+   81  ls -al ~/.ssh
+   82  cd ..
+   83  cd .ssh/
+   84  ls -lt
+   85  cd ..
+   86  $ ssh-keygen -t ed25519 -C "anikethbabu@gmail.com"
+   87  sudo apt install ssh-keygen
+   88  ssh-keygen -t ed25519 -C "anikethbabu@gmail.com"
+   89  cat ~/.ssh/id_ed25519.pub 
+   90  cd DjangoLearning/
+   91  git push
+   92  cd ..
+   93  cd DjangoLearning/
+   94  git push
+   95  git add .
+   96  git commit
+   97  git push
+   98  git remote set-url origin git@github.com:username/your-repository.git
+   99  git push
+  100  git status
+  101  ls -lt
+  102  git remote set-url origin git@github.com:anikethbabu/DjangoLearning.git
+  103  git pus
+  104  git push
+  105  history > history.txt
